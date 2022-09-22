@@ -1,0 +1,21 @@
+{
+  "name": "node-eth-listeners",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Skeith <github@skeith.dev>",
+  "license": "MIT",
+  "dependencies": {
+    "@opensea/stream-js": "^0.0.21-rc.1",
+    "decimal.js": "^10.4.1",
+    "dotenv": "^16.0.3",
+    "ethers": "^5.7.1",
+    "lodash": "^4.17.21",
+    "web3": "^1.8.0",
+    "winston": "^3.8.2",
+    "ws": "^8.9.0"
+  }
+}
