@@ -7,5 +7,6 @@ module.exports = {
   },
   OPENSEA: {
     API_KEY: process.env.OPENSEA_API_KEY,
-  }
-}
+    NETWORK: process.env.OPENSEA_NETWORK,
+  },
+};
