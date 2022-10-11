@@ -7,9 +7,19 @@ import logger from './helpers/logger.js';
 await providerHelper.connect();
 const provider = providerHelper.getProvider();
 
-const tokenAbi = ['function symbol() view returns (string)', 'function name() view returns (string)', 'function decimals() view returns (uint8)'];
-const erc721TransferEvent = ['event Transfer(address indexed from, address indexed to, uint256 indexed tokenId)'];
-const erc20TransferEvent = ['event Transfer(address indexed from, address indexed to, uint256 value)'];
+const tokenAbi = [
+  'function symbol() view returns (string)',
+  'function name() view returns (string)',
+  'function decimals() view returns (uint8)'
+];
+
+const erc721TransferEvent = [
+  'event Transfer(address indexed from, address indexed to, uint256 indexed tokenId)'
+];
+
+const erc20TransferEvent = [
+  'event Transfer(address indexed from, address indexed to, uint256 value)'
+];
 
 const transferTopic = [new utils.Interface(erc721TransferEvent).getEventTopic('Transfer')];
 
